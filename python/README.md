@@ -1,6 +1,8 @@
 # Overview
 
 This directory contains some examples to disburden the process of getting started with python programming.
+See the respective [github-repo](https://github.com/fsfw-dresden/hello-world-collection) for updates.
+Of course you are welcome to suggest additional content by your self, e. g., via pull request.
 
 How to use these examples:
 
