@@ -22,3 +22,7 @@ How to use these examples:
   * see the [README.md](05-generate-docs/README.md) in that directory
 - module_to_be_tested.py
   * this is not an example on its own but instead used by example 04
+
+# Publicity
+If you are interested in scientific computing with python see
+[http://www.tu-dresden.de/pythonkurs](http://www.tu-dresden.de/pythonkurs).

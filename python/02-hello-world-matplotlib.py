@@ -29,6 +29,12 @@ font = {'family': 'serif',
         'size': 16,
         }
 
+font2 = {'family': 'serif',
+        'color':  'darkblue',
+        'weight': 'normal',
+        'size': 12,
+        }
+
 
 # do the calculation
 
@@ -39,8 +45,13 @@ y = np.cos(2*np.pi*x) * np.exp(-x)
 
 plt.plot(x, y, 'k')
 plt.title('Damped exponential decay', fontdict=font)
-plt.text(2, 0.65, r'$\cos(2 \pi t) \exp(-t)$', fontdict=font)
-plt.text(2, 0.85, r'Hello World. I like functions.', fontdict=font)
+plt.text(1.3, 0.65, r'$\cos(2 \pi t) \exp(-t)$', fontdict=font)
+plt.text(1.3, 0.85, r'Hello World. I like functions.', fontdict=font)
+
+publicity_text = 'If you are interested in\n' \
+                 'scientific computing with python\n' \
+                 'see http://www.tu-dresden.de/pythonkurs'
+plt.text(1.3, 0.3, publicity_text, fontdict=font2)
 plt.xlabel('time (s)', fontdict=font)
 plt.ylabel('voltage (mV)', fontdict=font)
 
