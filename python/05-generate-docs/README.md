@@ -9,9 +9,13 @@ Der Inhalt des Verzeichnisses `doc` wurde ein mehreren Schritten erzeugt.
 2. Anpassung von `doc/source/conf.py`, sodass das zu dokumentierende Python-Paket `fsfw_demo_package` gefunden wird
 3. Ausführung von `sphinx-apidoc -f -o doc/source fsfw_demo_package/`. Dadurch werden relevante Dateien im Verzeichnis `doc/source` erzeugt.
 4. Anpassung von `doc/source/index.rst` zur Einbindung dieser Dateien, sowie von intro.rst (manuell erstellt).
-5. Ausführung von `make html` im Verzeichnis `doc`. Dadurch wird in `doc/build` die HTML-Dokumentation erzeugt (siehe `doc/build/html/index.html` )
+5. Ausführung von `make html` im Verzeichnis `doc`. Dadurch wird in `doc/build` die HTML-Dokumentation erzeugt (Ergebnis: siehe `doc/build/html/index.html`). Der Befehl `make html` ist am besten zweimal hintereinander auszuführen.
 
-Mehr Informationen sind z.B. im [Sphinx Tutorial](http://www.sphinx-doc.org/en/stable/tutorial.html) verfügbar.
+Der genaue Inhalt der manuell geänderten Dateien lässt sich z.B. mit folgenden Befehlen anzeigen:
+* `kdiff3 conf.py_original conf.py`
+* `kdiff3 index.rst_original index.rst`
+
+Mehr Informationen zur Doku-Erzeugung sind z.B. im [Sphinx Tutorial](http://www.sphinx-doc.org/en/stable/tutorial.html) verfügbar.
 
 
 ## Aus- und Eingabe für sphinx-quickstart

@@ -1,19 +1,19 @@
-fsfw\_demo\_package package
-===========================
+fsfw_demo_package package
+=========================
 
 Submodules
 ----------
 
-fsfw\_demo\_package\.core module
---------------------------------
+fsfw_demo_package.core module
+-----------------------------
 
 .. automodule:: fsfw_demo_package.core
     :members:
     :undoc-members:
     :show-inheritance:
 
-fsfw\_demo\_package\.support module
------------------------------------
+fsfw_demo_package.support module
+--------------------------------
 
 .. automodule:: fsfw_demo_package.support
     :members:
