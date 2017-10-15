@@ -1,6 +1,7 @@
 # Hinweise
 
-Das Verzeichnis `05-generate-docs` ist ein Beispiel für die automatische Erzeugung von Software-Dokumentation auf Basis von docstrings im Quellcode.
+Das Verzeichnis `05-generate-docs` ist ein Beispiel für die automatische Erzeugung von Software-Dokumentation
+auf Basis von docstrings im Quellcode mit Hilfe des Paketes [Sphinx](http://www.sphinx-doc.org).
 
 Das Verzeichnis `fsfw_demo_package` enthält den zu dokumentierenden Beispiel-Code.
 
@@ -16,6 +17,9 @@ Der genaue Inhalt der manuell geänderten Dateien lässt sich z.B. mit folgenden
 * `kdiff3 index.rst_original index.rst`
 
 Mehr Informationen zur Doku-Erzeugung sind z.B. im [Sphinx Tutorial](http://www.sphinx-doc.org/en/stable/tutorial.html) verfügbar.
+*Hinweis*: Sphinx kann so konfiguriert werden, dass in docstrings enthaltene Beispiele ausführt und die Resultate (Text, Grafiken)
+in die Dokumentation eingebunden werden, siehe z.B.
+[diese scipy-Funktion](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.bode.html).
 
 
 ## Aus- und Eingabe für sphinx-quickstart
