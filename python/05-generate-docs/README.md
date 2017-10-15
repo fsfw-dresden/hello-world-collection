@@ -1,28 +1,29 @@
-# Hinweise
+# General Information
 
-Das Verzeichnis `05-generate-docs` ist ein Beispiel für die automatische Erzeugung von Software-Dokumentation
-auf Basis von docstrings im Quellcode mit Hilfe des Paketes [Sphinx](http://www.sphinx-doc.org).
+The directory `05-generate-docs` is an example for the automatic generation of software documentation
+based on docstrings in the source code by means of the tool [Sphinx](http://www.sphinx-doc.org).
 
-Das Verzeichnis `fsfw_demo_package` enthält den zu dokumentierenden Beispiel-Code.
+The subdirectory `fsfw_demo_package` contains the example code which is to be documented.
 
-Der Inhalt des Verzeichnisses `doc` wurde ein mehreren Schritten erzeugt.
-1. Ausführung von `sphinx-quickstart`. Dabei werden interaktiv einige Parameter abgefragt. Für die Reproduzierbarkeit ist hier das Ergebnis weiter unten festgehalten.
-2. Anpassung von `doc/source/conf.py`, sodass das zu dokumentierende Python-Paket `fsfw_demo_package` gefunden wird
-3. Ausführung von `sphinx-apidoc -f -o doc/source fsfw_demo_package/`. Dadurch werden relevante Dateien im Verzeichnis `doc/source` erzeugt.
-4. Anpassung von `doc/source/index.rst` zur Einbindung dieser Dateien, sowie von intro.rst (manuell erstellt).
-5. Ausführung von `make html` im Verzeichnis `doc`. Dadurch wird in `doc/build` die HTML-Dokumentation erzeugt (Ergebnis: siehe `doc/build/html/index.html`). Der Befehl `make html` ist am besten zweimal hintereinander auszuführen.
+The content of the subdirectory `doc` was generated in the following steps:
+1. Execution of `sphinx-quickstart`. Thereby some parameters have to be provided interactively (see below).
+2. Editing of `doc/source/conf.py`, such that the python package which shall be documented (`fsfw_demo_package`) is in the search path.
+3. Execution of `sphinx-apidoc -f -o doc/source fsfw_demo_package/`. This generates the relevant files in the directory `doc/source`.
+4. Editing of `doc/source/index.rst` such that these files and intro.rst (created manually) are included.
+5. Execution of `make html` inside the directory `doc`. This generates the documentation in HTML format inside `doc/build`.
+ (Result: see `doc/build/html/index.html`). *Note*: It might be necessary to run the command `make html` twice.
 
-Der genaue Inhalt der manuell geänderten Dateien lässt sich z.B. mit folgenden Befehlen anzeigen:
+The content of the manual editing can be retraced, e.g., with the following commands
 * `kdiff3 conf.py_original conf.py`
 * `kdiff3 index.rst_original index.rst`
 
-Mehr Informationen zur Doku-Erzeugung sind z.B. im [Sphinx Tutorial](http://www.sphinx-doc.org/en/stable/tutorial.html) verfügbar.
-*Hinweis*: Sphinx kann so konfiguriert werden, dass in docstrings enthaltene Beispiele ausführt und die Resultate (Text, Grafiken)
-in die Dokumentation eingebunden werden, siehe z.B.
-[diese scipy-Funktion](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.bode.html).
+More information on this topic is available for example in the  [Sphinx Tutorial](http://www.sphinx-doc.org/en/stable/tutorial.html).
+*Note*: Sphinx ca be configured such that code examples contained in docstrings are executed and their results (text, graphics)
+are included in the generated docs, e.g., see
+[this scipy function](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.bode.html).
 
 
-## Aus- und Eingabe für sphinx-quickstart
+## Out- and input of sphinx-quickstart
 
     Welcome to the Sphinx 1.6.3 quickstart utility.
 
